@@ -43,8 +43,14 @@ class Song
     genre_count
   end 
 
-  def artist_count
-    #puts artist and how many songs {"Beyonce" => 17, "Jay-Z" => 2 }
+  def self.artist_count
+    artist_count = {}
+    @@artists.each do |count|
+      if artist_count[count]+=1 
+      else 
+        genre_count[count]=1 
+      end 
+    end 
   end 
 
 end 
