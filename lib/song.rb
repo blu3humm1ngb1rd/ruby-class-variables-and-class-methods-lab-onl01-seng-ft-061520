@@ -33,7 +33,7 @@ class Song
     #puts number of songs (.count ) each genre {hash} {"rap" => 5, "rock" => 2 ,etc ---- create hash with genre as key, interger value for songs 
     # hash will = unique genre array as the key, and the count of the genre 
     
-    genre_hash = {@@genres.uniq => how_many_songs}
+    genre_hash = {@@genres.uniq => something.count}
     #return the hash created 
   end 
  
