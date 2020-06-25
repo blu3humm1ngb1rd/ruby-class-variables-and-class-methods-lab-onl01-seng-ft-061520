@@ -37,7 +37,7 @@ class Song
     genre_hash = {@@genres.uniq => something.count}
     #return the hash created 
   end 
- 
+
   def artist_count
     #puts artist and how many songs {"Beyonce" => 17, "Jay-Z" => 2 }
   end 
