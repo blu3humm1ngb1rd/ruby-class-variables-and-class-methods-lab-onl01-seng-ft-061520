@@ -34,9 +34,13 @@ class Song
     #puts number of songs (.count ) each genre {hash} {"rap" => 5, "rock" => 2 ,etc ---- create hash with genre as key, interger value for songs 
     # hash will = unique genre array as the key, and the count of the genre 
     @@genres.each do |count|
-      binding.pry 
+      if genre_count[count]
+        genre_count[count]+=1 
+      else 
+        genre_count[count]=1 
+      end 
     end
-    #return the hash created 
+    genre_count
   end 
 
   def artist_count
